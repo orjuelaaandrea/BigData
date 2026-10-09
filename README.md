@@ -78,11 +78,9 @@ spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3 spark_s
 
 
 
-## 📸 Evidencias de Ejecución y Monitoreo
+📸 Evidencias de Ejecución y Monitoreo
 
 Todas las capturas de pantalla utilizadas como evidencia se encuentran organizadas dentro del directorio [`/evidencias`](./evidencias/).
-
----
 
 ### 1. Terminal del Productor (`kafka_producer.py`)
 Muestra la generación y envío continuo de eventos de sensores en formato JSON hacia el tópico `sensor_data` cada segundo.
