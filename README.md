@@ -74,8 +74,20 @@ Abrir una segunda ventana en PuTTY, iniciar sesión y ejecutar:
 Bash
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.3 spark_streaming_consumer.py
 
-Evidencias de Ejecución y Monitoreo
-Terminal del Productor: Transmisión continua de eventos simulados (Sent: {'sensor_id': ..., 'temperature': ..., 'humidity': ...}).
-Terminal del Consumidor: Salida de Spark mostrando el resumen por micro-lotes (batches) agrupados por ventana de tiempo de 1 minuto.
-Consola Web Spark UI: Accesible desde el navegador del equipo anfitrión ingresando a http://<IP_MAQUINA_VIRTUAL>:4040 (ejemplo: http://192.168.1.7:4040), donde se evidencia el estado de los Jobs, Stages y Executors activos.
-(Las capturas correspondientes a cada punto se encuentran en la carpeta /evidencias de este repositorio).
+
+
+
+
+## 📸 Evidencias de Ejecución y Monitoreo
+
+Todas las capturas de pantalla utilizadas como evidencia se encuentran organizadas dentro del directorio [`/evidencias`](./evidencias/).
+
+---
+
+### 1. Terminal del Productor (`kafka_producer.py`)
+Muestra la generación y envío continuo de eventos de sensores en formato JSON hacia el tópico `sensor_data` cada segundo.
+
+```text
+Sent: {'sensor_id': 4, 'temperature': 24.29, 'humidity': 60.15, 'timestamp': 1728951...}
+Sent: {'sensor_id': 8, 'temperature': 24.08, 'humidity': 48.18, 'timestamp': 1728951...}
+Sent: {'sensor_id': 3, 'temperature': 26.30, 'humidity': 44.01, 'timestamp': 1728951...}
