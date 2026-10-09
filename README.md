@@ -1,5 +1,3 @@
-Aquí tienes la plantilla lista en formato Markdown para que la copies y la pegues directamente en el archivo README.md (o README.txt) de tu repositorio de GitHub.
-Incluye la aclaración sobre la máquina virtual en un recuadro destacado para el tutor o evaluador, así como toda la documentación técnica del laboratorio:
 # Análisis de Datos en Tiempo Real con Apache Kafka y Spark Streaming
 Curso: Big Data  
 Universidad: Universidad Nacional Abierta y a Distancia (UNAD)  
