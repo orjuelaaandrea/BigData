@@ -13,7 +13,13 @@ Este proyecto implementa una arquitectura end-to-end de análisis de datos en st
 
 - Productor (Kafka Producer): Script en Python (kafka_producer.py) que simula la generación periódica de lectura de sensores de IoT (ID de sensor, temperatura, humedad y marca de tiempo) enviándolos en formato JSON al tópico sensor_data de Apache Kafka.
 - Consumidor (Spark Streaming Consumer): Script en PySpark (spark_streaming_consumer.py) que se conecta a Kafka en tiempo real, deserializa los mensajes y calcula métricas agregadas (promedio de temperatura y humedad) utilizando ventanas de tiempo de 1 minuto.
-## Estructura del Repositorio
+
+
+
+
+## 📁 Estructura del Repositorio
+
+```text
 ├── kafka_producer.py          # Script emisor de datos de sensores hacia Kafka
 ├── spark_streaming_consumer.py # Script procesador de streaming con Spark SQL
 ├── evidencias/                # Capturas de pantalla de la ejecución y Spark UI
@@ -21,6 +27,12 @@ Este proyecto implementa una arquitectura end-to-end de análisis de datos en st
 │   ├── 02_ejecucion_consumidor_batches.png
 │   └── 03_spark_ui_puerto_4040.png
 └── README.md                  # Documentación completa del laboratorio
+
+
+
+
+
+
 Prerrequisitos e Instalación
 Entorno configurado sobre máquina virtual Ubuntu Linux (vboxuser):
 Instalación del cliente de Python para Kafka:
